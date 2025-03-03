@@ -1,0 +1,47 @@
+{
+  "name": "ai-assistant",
+  "version": "1.0.0",
+  "description": "A fully functional AI assistant web application using Next.js, Express, and AI APIs.",
+  "author": "Your Name",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "server": "node server.js",
+    "lint": "next lint",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5",
+    "axios": "^1.6.3",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3",
+    "mongoose": "^7.5.2",
+    "next": "13.4.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "next-themes": "^0.2.1"
+  },
+  "devDependencies": {
+    "eslint": "8.52.0",
+    "eslint-config-next": "13.4.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": "eslint --fix"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
